@@ -1,10 +1,9 @@
 {
   "name": "storybook-addon-dependencies",
-  "version": "8.0.3",
-  "description": "Browse across stories with an interactive dependency tree on autodocs page.",
+  "version": "7.0.1",
+  "description": "Browse across stories with interactive dependency tree on autodocs page.",
   "keywords": [
     "docs",
-    "tree",
     "dependencies",
     "react",
     "blocks",
@@ -33,6 +32,7 @@
   "bin": "./dist/buildTree.cjs",
   "scripts": {
     "tree": "node ./dist/buildTree.cjs",
+    "rm": "rm -rf node_modules/ package-lock.json",
     "build": "rm -rf dist/ && tsc",
     "build:watch": "tsc -w",
     "start": "rm -rf dist/ && run-p build:watch storybook",
@@ -41,21 +41,21 @@
   },
   "devDependencies": {
     "@babel/types": "^7.0.0",
-    "@storybook/addon-essentials": "^8.0.0",
-    "@storybook/blocks": "^8.0.0",
-    "@storybook/components": "^8.0.0",
+    "@storybook/addon-essentials": "^7.0.0",
+    "@storybook/blocks": "^7.0.0",
+    "@storybook/components": "^7.0.0",
     "@storybook/icons": "^1.2.9",
-    "@storybook/manager-api": "^8.0.0",
-    "@storybook/react": "^8.0.0",
-    "@storybook/react-vite": "^8.0.0",
-    "@storybook/types": "^8.0.0",
+    "@storybook/manager-api": "^7.0.0",
+    "@storybook/react": "^7.0.0",
+    "@storybook/react-vite": "^7.0.0",
+    "@storybook/types": "^7.0.0",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "storybook": "^8.0.0",
+    "storybook": "^7.0.0",
     "typescript": "^5.4.2",
-    "vite": "^5.1.6"
+    "vite": "^4.0.0"
   },
   "publishConfig": {
     "access": "public"
@@ -70,8 +70,8 @@
   "peerDependencies": {
     "@babel/parser": "^7.24.4",
     "@babel/traverse": "^7.0.0",
-    "@storybook/addon-docs": "^8.0.0",
-    "@storybook/addon-links": "^8.0.0",
+    "@storybook/addon-docs": "^7.0.0",
+    "@storybook/addon-links": "^7.0.0",
     "glob": "^9.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
